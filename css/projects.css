@@ -1,0 +1,194 @@
+/* Reset some default styles and apply a basic styling to the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    padding-bottom: 100px;
+}
+
+/* Style the header (same as the home page) */
+header {
+    background-color: #333; /* Header background color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header ul li:last-child {
+    margin-right: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff; /* Header link color */
+    font-weight: bold;
+    font-size: 16px; /* Header link font size */
+}
+
+/* Style the video background section */
+.video-background {
+    position: relative;
+    overflow: hidden;
+    height: 30vh; /* Set the height to cover the entire viewport vertically */
+    text-align: center;
+    color: #fff; /* Default text color */
+}
+
+/* Video background */
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.94); /* Deep white overlay color */
+}
+
+/* Content */
+.content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 20px 60px;
+}
+
+/* Style the heading */
+.content h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+    margin: 0;
+    color: #333;
+}
+
+/* Style the project content (customize as needed) */
+.projects {
+    color: #333;
+    /* padding: 20px; */
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: left;
+    width: 100%;
+}
+
+.projects p {
+    font-size: 20px;
+}
+
+/* Style the project div */
+.project {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px; /* Separate from previous project by 30px margin */
+    /* border: 1px solid #ccc; */
+    padding: 0px 50px;
+}
+
+.project-image {
+    max-width: 200px;
+}
+
+/* Style the left side image */
+.project-image img {
+    width: 100%;
+}
+
+/* Style the right side containing title and description */
+.project-details {
+    padding: 20px;
+}
+
+.project-details h2 {
+    font-size: 24px; /* Title font size */
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.description h5 {
+    color: #000;
+    margin: 0;
+}
+
+/* Style the project description */
+.description p {
+    font-size: 18px; /* Description font size */
+    margin: 0;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    /* On screens 768px and larger, display in a row */
+    .project {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .project-image {
+        flex: 1; /* Takes up one-third of the available width */
+        padding: 0 20px 0 0; /* Add space between image and text */
+    }
+
+    .project-details {
+        flex: 2; /* Takes up two-thirds of the available width */
+        padding: 20px;
+    }
+}
+
+.authors {
+    list-style: none;
+    padding: 0;
+}
+
+.authors li {
+    display: inline-block;
+}
+
+.authors a {
+    color: #333;
+    font-size: 17px;
+}
+
+.authors a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+.project-details a {
+    text-decoration: none;
+    color: #333;
+}
+
+.project-details a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.certificate {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 8px 13px;
+    border-radius: 8px;
+}

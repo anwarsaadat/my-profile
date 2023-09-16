@@ -1,0 +1,256 @@
+/* Reset some default styles and apply a basic styling to the body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header and center-align its contents */
+header {
+  background-color: #333; /* Change this to your desired background color */
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 20px; /* Adjust the margin to create spacing between links */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff; /* Change this to your desired text color */
+  font-weight: bold;
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+/* Style the links on hover */
+nav a:hover {
+  color: #ff6600; /* Change this to your desired hover color */
+}
+
+.profile-photo {
+  border-radius: 100%;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* Style the profile section */
+.profile {
+  margin-bottom: 20px;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.profile-photo img {
+  width: 100%;
+}
+
+/* Style the name */
+.profile h1 {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin: 0;
+}
+
+/* Style the links */
+.links a {
+  text-decoration: none;
+  color: #333; /* Change this to your desired text color */
+  margin: 10px;
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+/* Style the links on hover */
+.links a:hover {
+  color: #ff6600; /* Change this to your desired hover color */
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: #333; /* Default text color */
+}
+
+/* Video background */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Deep white overlay color */
+}
+
+/* Content */
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 40px 0;
+}
+
+/* Style the profile section */
+.profile-photo {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Adjust the size as needed */
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  border: 3px solid #333;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin: 0;
+}
+
+/* Style the links */
+.links a {
+  text-decoration: none;
+
+  font-weight: bold;
+  font-size: 16px; /* Adjust the font size as needed */
+  margin: 10px;
+}
+
+/* Style the links on hover */
+.links a:hover {
+  color: #ff6600; /* Change this to your desired hover color */
+}
+
+.interests-section {
+  background-color: #f3f3f3; /* Change this to your desired background color */
+  padding: 10px 0;
+  text-align: center;
+}
+
+.interests-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.interests-container h2 {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-bottom: 10px;
+}
+
+.interests-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.interests-container li {
+  font-size: 18px; /* Adjust the font size as needed */
+  margin-top: 10px;
+  display: inline-block;
+  padding: 0 10px;
+  border-right: 1px solid #333;
+}
+
+.interests-container li:last-child {
+  border-right: 1px solid transparent;
+}
+
+.text-div {
+  background-color: #fff; /* Change this to your desired background color */
+  padding: 20px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.text-div p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.cards-section {
+  background-color: #fff; /* Background color for the card section */
+  padding: 40px 80px;
+}
+
+.card {
+  border: 1px solid #e0e0e0; /* Border for each card */
+  border-radius: 8px; /* Rounded corners for each card */
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Style the "Read More" button */
+.btn-primary {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Button background color on hover */
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+  .cards-section {
+    background-color: #fff; /* Background color for the card section */
+    padding: 40px 40px;
+  }
+
+  .card {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
