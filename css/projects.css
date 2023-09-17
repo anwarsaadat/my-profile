@@ -35,13 +35,37 @@ header ul li a {
     font-size: 16px; /* Header link font size */
 }
 
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 20px; /* Adjust the margin to create spacing between links */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff; /* Change this to your desired text color */
+  font-weight: bold;
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+/* Style the links on hover */
+nav a:hover {
+  color: #ff6600; /* Change this to your desired hover color */
+}
+
 /* Style the video background section */
 .video-background {
     position: relative;
     overflow: hidden;
-    height: 30vh; /* Set the height to cover the entire viewport vertically */
+    /* height: 250px;  */
     text-align: center;
     color: #fff; /* Default text color */
+    border-bottom: 1px solid #ededed;
 }
 
 /* Video background */
